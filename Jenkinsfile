@@ -138,6 +138,7 @@ pipeline {
  //              sh "bash k8s-deployment.sh"
  //            }
  //          },
+	     // do this different stage in real word
  //          "Rollout Status": {
  //            withKubeConfig([credentialsId: 'kubeconfig']) {
  //              sh "bash k8s-deployment-rollout-status.sh"
