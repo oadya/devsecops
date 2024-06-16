@@ -122,9 +122,11 @@ pipeline {
  //          },
 	     // kubesec is a security risk analisis for k8s resources and provide a security score for each vulnerability
 	     // take yaml file as input
+	     // give advise on what can be added to yaml conf for better security purpose (limit cpu & limit, apparmor, seccomp, serviceAccountName, ...)
  //          "Kubesec Scan": {
  //            sh "bash kubesec-scan.sh"
  //          },
+	      // scan again the docker image pulling from the docker registry before deplying it to k8s cluster
  //          "Trivy Scan": {
  //            sh "bash trivy-k8s-scan.sh"
  //          }
