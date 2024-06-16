@@ -181,7 +181,7 @@ pipeline {
  //        }
  //      }
  //    }
-
+       // To test kubeadm cluster (node, etcd, kubelet, ..)
  //    stage('K8S CIS Benchmark') {
  //      steps {
  //        script {
