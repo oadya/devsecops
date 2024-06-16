@@ -121,6 +121,7 @@ pipeline {
  //            sh 'docker run --rm -v $(pwd):/project openpolicyagent/conftest test --policy opa-k8s-security.rego k8s_deployment_service.yaml'
  //          },
 	     // kubesec is a security risk analisis for k8s resources and provide a security score for each vulnerability
+	     // take yaml file as input
  //          "Kubesec Scan": {
  //            sh "bash kubesec-scan.sh"
  //          },
