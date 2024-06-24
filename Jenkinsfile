@@ -96,6 +96,8 @@ pipeline {
 	 		"Trivy Scan":{
 	 			sh "bash trivy-docker-image-scan.sh"
 	 		},
+		        // OPA Conftest help to write test(static analyze) to test the Dockerfile to check docker best practices
+		        // Conftest Rego language
 	 		"OPA Conftest":{
 	 			sh 'docker run --rm -v $(pwd):/project openpolicyagent/conftest test --policy opa-docker-security.rego Dockerfile'
 	 		}   	
